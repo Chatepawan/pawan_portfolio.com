@@ -1,0 +1,141 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* You can replace this with your preferred font */
+    background-color: #292a2d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Adjust this as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Left Side Logo and Name */
+  .left-side {
+    width: 100%;
+    text-align: center;
+    background-color: #292a2d;
+    padding: 20px 0;
+  }
+  
+  .left-side .logo h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* Right Side Navbar */
+  .right-side {
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Home Section Styles */
+  .home-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: left; /* Ensures text alignment */
+  }
+  
+  .photo img {
+    width: 150px; /* Size of the profile photo */
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover;
+    margin-right: 20px; /* Space between the photo and text */
+  }
+  
+  .info {
+    max-width: 600px; /* Limit the width of the intro text */
+  }
+  
+  .intro-text {
+    font-size: 1.2em; /* Adjust the size of the introduction text */
+    line-height: 1.4; /* Spacing between lines */
+  }
+  
+  
+  /* Main Content */
+  .main-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section img {
+    max-width: 100%;
+  }
+  
+  .home-content, .what-i-do, .education-content, .projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills, .education-details, .project-list {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Tech Stack */
+  .tech-stack, .project-list .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tech-item, .project-box .tech-item {
+    margin: 10px;
+    position: relative; /* New addition for hover effect */
+  }
+  
+  .tech-item img, .project-box .tech-item img {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  /* Tech Name on Hover (new styles) */
+  .tech-item:hover .tech-name, 
+  .project-box .tech-item:hover .tech-name {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100
+  }  
